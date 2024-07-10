@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Assingment_1</title>
+      <link rel="stylesheet" href="">
+      <script>
+         function multiply(a,b){
+            return a*b;
+         };
+         function calculateProduct(){
+            let v1 =parseFloat(document.getElementById("num1").value);
+            let v2 =parseFloat(document.getElementById("num2").value);
+            let product = multiply(v1,v2);
+          document.getElementById("result").textContent = "product :" + product;
+            
+         };
+        
+      </script>
+</head>
+<body> 
+      <div>
+      <h1><b>Q#1</b></h1>
+      <p>Define a function named multiply that takes two numbers
+         as parameters and returns their product.
+        Write code to test this function with different input values.</p>
+        
+        <input type="" id="num1" placeholder="Eenter 1st parameter"><br><br>
+        <input type="text" id="num2" placeholder="Eenter 2nd parameter"><br><br>
+        <button onclick="calculateProduct()">calculate</button><br><br>  
+        <p id ="result"></p>
+</div>
+</body>
+</html>

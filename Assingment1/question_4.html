@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_1</title>
+    <script>
+       
+       function calculate(weight,height){
+            return weight / (height * height);
+       }
+             function calculateBMI(){
+                  let weight = document.getElementById('weight').value;
+                  let height = document.getElementById('height').value;
+                  let result = calculate(weight,height);
+                  document.getElementById('result').textContent = ` the BMI ${result}`;
+             }
+
+        
+        
+    </script>
+</head>
+<body>
+      <div>
+            <h1><b>Q#4</b></h1>
+            <p>Define a function called calculateBMI that takes a person's weight (in kilograms) and height (in meters) as parameters and returns their Body Mass Index (BMI). The formula for BMI is weight / (height * height).
+                   Write code to test this function with different input values.</p> 
+                      
+        <input type="" id="weight" placeholder="Eenter weight kilograms"><br><br>
+        <input type="text" id="height" placeholder="Eenter height meters"><br><br>
+        <button onclick="calculateBMI()"> submit</button><br><br>  
+        <p id ="result"></p>
+              
+      </div>
+</body>
+</html>

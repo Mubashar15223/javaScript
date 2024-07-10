@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Assingment_1</title>
+      <link rel="stylesheet" href="">
+      <script>
+const isPalindrome = (str) => {
+    str = str.toLowerCase();
+    str = str.replace(/[\W_]/g, '');
+    const reversedStr = str.split('').reverse().join('');//string to array,reverse,again join
+    return str === reversedStr;
+};
+console.log(isPalindrome("radar")); 
+console.log(isPalindrome("laravel")); 
+console.log(isPalindrome("php")); 
+console.log(isPalindrome("i am a developer"));
+
+
+      </script>
+</head>
+<body> 
+      <div>
+      <h1><b>Q#10</b></h1>
+      <p>Define a function named isPalindrome that takes a string as a parameter and returns true if the string is a palindrome (i.e., it reads the same forwards and backwards) and false otherwise. Write code to test this function with different input values.
+        </p>
+</div>
+</body>
+</html>

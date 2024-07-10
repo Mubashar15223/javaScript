@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_1</title>
+    <script>
+       
+       function reverse(str){
+            let reversed= '';
+            for(let i=str.length-1; i>=0; i--){
+                  reversed += str[i];
+            }
+            return reversed;
+       }
+             function reversedString(){
+                  let str = document.getElementById('str').value;
+                 
+                  let result = reverse(str);
+                  document.getElementById('result').textContent = ` The length  of string ${result}`;
+             }
+
+        
+        
+    </script>
+</head>
+<body>
+      <div>
+            <h1><b>Q#6</b></h1>
+            <p>  Define a function named reverseString that takes a string as a parameter and returns the reverse of that string.
+                   Write code to test this function with different input values.
+            </p> 
+                      
+        <input type="" id="str" placeholder="Eenter a string"><br><br>
+        
+        <button onclick="reversedString()"> submit</button><br><br>  
+        <p id ="result"></p>
+              
+      </div>
+</body>
+</html>

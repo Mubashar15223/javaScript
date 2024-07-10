@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_1</title>
+    <script>
+       
+       function length(string){
+            return string.length;
+       }
+             function findLength(){
+                  let str = document.getElementById('str').value;
+                 
+                  let result = length(str);
+                  document.getElementById('result').textContent = ` The length  of string ${result}`;
+             }
+
+        
+        
+    </script>
+</head>
+<body>
+      <div>
+            <h1><b>Q#5</b></h1>
+            <p> Write an arrow function that takes a string as a parameter 
+                  and returns the length of that string. Write code to test this function with different input values.
+            </p> 
+                      
+        <input type="" id="str" placeholder="Eenter a string"><br><br>
+        
+        <button onclick="findLength()"> submit</button><br><br>  
+        <p id ="result"></p>
+              
+      </div>
+</body>
+</html>
