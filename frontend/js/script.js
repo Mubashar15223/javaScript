@@ -1,4 +1,4 @@
-
+// script.js
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('[data-content]');
   

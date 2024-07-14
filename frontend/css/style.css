@@ -1,0 +1,35 @@
+/* style.css */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+#sidebar {
+  min-width: 218px;
+  max-width: 218px;
+  background: #343a40;
+  color: #fff;
+
+}
+#sidebar .list-unstyled li { 
+  padding: 6px 0px 6px 0px;
+}
+#sidebar .list-unstyled li a {
+  color: #fff;
+  text-decoration: none;
+}
+#content {
+  flex: 1;
+  padding: 20px;
+}
+.footer {
+  background: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.bg-navbar-color { background-color: #5564d1 !important;}
