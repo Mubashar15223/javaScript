@@ -1,0 +1,55 @@
+.event-card {
+  position: relative;
+  /* Add any additional styles you need */
+}
+
+.event-image {
+  position: relative;
+}
+
+.event-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fallback-text {
+  /* Style for fallback text when no image is available */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.event-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-btn,
+.delete-btn,
+.favorite-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff; /* Adjust color as needed */
+  font-size: 20px;
+  margin-bottom: 5px; /* Space between buttons */
+}
+
+.favorite-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #ffd700; /* Gold color for favorite button */
+}
+
+.event-info {
+  padding: 10px;
+  /* Add any additional styles for event info */
+}

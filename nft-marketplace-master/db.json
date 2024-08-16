@@ -1,0 +1,104 @@
+{
+  "nfts": [
+    {
+      "id": "e2c7",
+      "title": " hiu",
+      "reference": "ff",
+      "author": "djaajd",
+      "priceEth": "2222",
+      "priceUsd": "444",
+      "img": "https://banner2.cleanpng.com/20240123/scg/transparent-doodle-style-tree-branch-tree-image-keywords-tree-img-srctree-jpg-altimage-of-tree-with-long-1710909770275.webp"
+    },
+    {
+      "id": "4eb5",
+      "title": "title",
+      "reference": "refrence ",
+      "author": "author ",
+      "priceEth": "22.3",
+      "priceUsd": "444.36",
+      "img": "https://banner2.cleanpng.com/20240123/scg/transparent-doodle-style-tree-branch-tree-image-keywords-tree-img-srctree-jpg-altimage-of-tree-with-long-1710909770275.webp"
+    },
+    {
+      "id": "0745",
+      "title": "testing img",
+      "reference": "erur",
+      "author": "ad",
+      "priceEth": "34",
+      "priceUsd": "233.98",
+      "img": "blob:http://localhost:5173/66d06efd-e0e8-4258-a814-4cb4e1cfebd7"
+    },
+    {
+      "id": "24ad",
+      "title": " both img url",
+      "reference": "ref",
+      "author": "author",
+      "priceEth": "34",
+      "priceUsd": "22.95",
+      "img": "blob:http://localhost:5173/af60b9ca-11ef-4ec8-9930-7306a20c7066",
+      "imgUrl": "f"
+    },
+    {
+      "id": "3576",
+      "title": "ff",
+      "reference": "hjfy",
+      "author": "rsr",
+      "priceEth": "0.49",
+      "priceUsd": "0.4",
+      "img": "blob:http://localhost:5173/f59e47f4-223b-4582-ae54-c92028eef07e"
+    },
+    {
+      "id": "cb6d",
+      "title": "mubasahr",
+      "reference": "rf",
+      "author": "auty",
+      "priceEth": "33",
+      "priceUsd": "45",
+      "img": "blob:http://localhost:5173/6dda12de-881f-46e4-bb48-d6ac439aa58e"
+    },
+    {
+      "id": "467f",
+      "title": "ltest 1",
+      "reference": "ref",
+      "author": "auth",
+      "priceEth": "123",
+      "priceUsd": "20.94",
+      "img": "blob:http://localhost:5173/5c2e21ac-9c30-4425-9f2a-96969e0b84a0"
+    },
+    {
+      "id": "8162",
+      "title": "latett",
+      "reference": "ref",
+      "author": "auth",
+      "priceEth": "21.92",
+      "priceUsd": "13",
+      "img": "blob:http://localhost:5173/7bcbe857-3b1a-46f0-bafe-a00e9d33a346"
+    },
+    {
+      "id": "8302",
+      "title": "fgh",
+      "reference": "hjh",
+      "author": "gjjh",
+      "priceEth": "87",
+      "priceUsd": "33.92",
+      "img": "blob:http://localhost:5173/7bcbe857-3b1a-46f0-bafe-a00e9d33a346"
+    },
+    {
+      "id": "40a7",
+      "title": "qws",
+      "reference": "ddd",
+      "author": "dddd",
+      "priceEth": "233.95",
+      "priceUsd": "122.96",
+      "img": "blob:http://localhost:5173/21f1ac48-0b51-490f-bf2c-034a024a0bbd"
+    },
+    {
+      "title": "aaaaaaa",
+      "reference": "asaaaaa",
+      "author": "cvv",
+      "priceEth": "234",
+      "priceUsd": "122.93",
+      "img": "blob:http://localhost:5173/ca043384-2e98-4242-be51-53b1f19e60da",
+      "id": "2386"
+    }
+  ]
+}

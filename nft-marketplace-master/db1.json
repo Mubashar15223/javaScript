@@ -1,0 +1,60 @@
+{
+  "events": [
+    {
+      "name": "Tech Conference 2024",
+      "dateTime": "2024-09-15T09:00",
+      "targetAudience": "Tech Enthusiasts",
+      "description": "Join us for the annual Tech Conference where we explore the latest trends in technology and innovation. Featuring keynote speakers, workshops, and networking opportunities.",
+      "img": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F811901669%2F2050892531553%2F1%2Foriginal.20240722-065017?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C9%2C300%2C150&s=a260eaa1a702892d43435ca72cfcdff8",
+      "id": "426c"
+    },
+    {
+      "name": "Startup Pitch Night",
+      "dateTime": "2024-10-05T17:00",
+      "targetAudience": "Entrepreneurs",
+      "description": "Pitch your startup ideas to a panel of investors and industry experts. Network with fellow entrepreneurs and gain valuable feedback on your business.",
+      "img": " https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-startup-pitch-night-0-2024-3-14-t-6-17-29.jpg",
+      "id": "8fb4"
+    },
+    {
+      "name": "Music Festival 2024",
+      "dateTime": "2024-09-25T12:00",
+      "targetAudience": "Music Fans",
+      "description": "Experience live performances from top bands and artists at our annual Music Festival. A day of great music, food, and fun awaits!",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsAuQlGdxkRDZh2eD3RZlcQojJk095rw5O5A&s",
+      "id": "64e7"
+    },
+    {
+      "name": "Food Truck Rally",
+      "dateTime": "2024-10-20T11:00",
+      "targetAudience": "Foodies",
+      "description": "Enjoy a variety of delicious food from local food trucks at our Food Truck Rally. Live music and entertainment will be provided.",
+      "img": "https://www.monmouthpark.com/wp-content/uploads/2019/04/festival.jpg",
+      "id": "64e8"
+    },
+    {
+      "name": "Literary Festival",
+      "dateTime": "2024-11-02T14:00",
+      "targetAudience": "Book Lovers",
+      "description": "Attend author readings, book signings, and literary discussions at our Literary Festival. Meet your favorite authors and discover new reads.",
+      "img": "https://www.latrobe.vic.gov.au/sites/default/files/2021-04/Literary%20Festival%20logo%20small.jpg",
+      "id": "64e9"
+    },
+    {
+      "name": "Film Screening & Q&A",
+      "dateTime": "2024-11-10T19:00",
+      "targetAudience": "Film Buffs",
+      "description": "Watch a special screening of an acclaimed film followed by a Q&A session with the director. An evening of cinema and conversation awaits.",
+      "img": "https://www.cinema.utoronto.ca/sites/www.cinema.utoronto.ca/files/styles/ne_3btn_widget/public/Brother.jpg?itok=5pJhVrmM",
+      "id": "64ea"
+    },
+    {
+      "name": "New Year's Eve Gala",
+      "dateTime": "2024-12-31T20:00",
+      "targetAudience": "Partygoers",
+      "description": "Ring in the New Year with style at our Gala. Enjoy a night of dancing, dining, and celebrations as we welcome 2025.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjm6bHEW2XpIxQHRCQdWX36DrtjbjaCQs0mg&s",
+      "id": "64ec"
+    }
+  ]
+}
