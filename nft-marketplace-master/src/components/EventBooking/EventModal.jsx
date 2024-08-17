@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Button } from "../shared/Button";
 
-export function EventModal({ closeModal, action = "add",event, onDelete }) {
+export function EventModal({
+  closeModal,
+  action = "add",
+  event,
+  onDelete,
+  reFresh,
+}) {
   const [formData, setFormData] = useState({
     name: "",
     dateTime: "",
@@ -29,10 +35,9 @@ export function EventModal({ closeModal, action = "add",event, onDelete }) {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
-
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -66,31 +71,38 @@ export function EventModal({ closeModal, action = "add",event, onDelete }) {
   const handleSubmit = async (e) => {
     const formDataSubmit = new FormData();
     e.preventDefault();
-    if (action === 'del') {
-      if (onDelete) onDelete(); 
+    if (action === "del") {
+      if (onDelete) onDelete();
+      reFresh("del");
     } else if (validateForm()) {
       try {
-          formDataSubmit.append( 'name', formData.name );
-          formDataSubmit.append('dateTime' , formData.dateTime)
-          formDataSubmit.append('targetAudience', formData.targetAudience )
-          formDataSubmit.append ('description', formData.description)        
-          formDataSubmit.append('img', formData.img)
-        if (action === 'add') {
-          await axios.post('http://localhost:4000/events', formDataSubmit,{
+        formDataSubmit.append("name", formData.name);
+        formDataSubmit.append("dateTime", formData.dateTime);
+        formDataSubmit.append("targetAudience", formData.targetAudience);
+        formDataSubmit.append("description", formData.description);
+        formDataSubmit.append("img", formData.img);
+        if (action === "add") {
+          reFresh("add");
+          await axios.post("http://localhost:4000/events", formDataSubmit, {
             headers: {
-              'Content-Type': 'application/json'
-          }
-          } );
-        } else if (action === 'edit' && event) {
-          await axios.put(`http://localhost:4000/events/${event.id}`, formDataSubmit,{
-            headers: {
-              'Content-Type': 'application/json'
-          }
+              "Content-Type": "application/json",
+            },
           });
+        } else if (action === "edit" && event) {
+          reFresh("edit");
+          await axios.put(
+            `http://localhost:4000/events/${event.id}`,
+            formDataSubmit,
+            {
+              headers: {
+                "Content-Type": "application/json",
+              },
+            }
+          );
         }
         closeModal();
       } catch (error) {
-        console.error('Error saving item:', error);
+        console.error("Error saving item:", error);
       }
     }
   };
@@ -200,7 +212,12 @@ export function EventModal({ closeModal, action = "add",event, onDelete }) {
               </div>
 
               <div className="mb-4">
-                <label className="block text-sm font-medium mb-2 text-white" htmlFor="img">Image URL</label>
+                <label
+                  className="block text-sm font-medium mb-2 text-white"
+                  htmlFor="img"
+                >
+                  Image URL
+                </label>
                 <input
                   id="img"
                   name="img"
@@ -209,10 +226,17 @@ export function EventModal({ closeModal, action = "add",event, onDelete }) {
                   onChange={handleFileChange}
                   className="border border-gray-600 rounded-lg w-full p-2 bg-gray-800 text-gray-200"
                 />
-                {formData.img && <img src={formData.img} alt="Preview" className="mt-2 max-w-full h-auto" />}
-                {errors.img && <div className="text-red-500 text-sm">{errors.img}</div>}
+                {formData.img && (
+                  <img
+                    src={formData.img}
+                    alt="Preview"
+                    className="mt-2 max-w-full h-auto"
+                  />
+                )}
+                {errors.img && (
+                  <div className="text-red-500 text-sm">{errors.img}</div>
+                )}
               </div>
-              
             </>
           )}
           <div className="flex justify-between">

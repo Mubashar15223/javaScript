@@ -9,9 +9,10 @@ export default function EventBooking() {
   const [eventlist, setEventList] = useState([]);
   const [modalOpen, setIsModalOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const [action, setAction] = useState('add');
+  const [action, setAction] = useState('');
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [refresh,setRefresh]= useState('');
   const [favorites, setFavorites] = useState(() => {
     // Load favorites from local storage
     const savedFavorites = localStorage.getItem('favorites');
@@ -29,7 +30,7 @@ export default function EventBooking() {
       }
     }
     events();
-  }, []);
+  }, [refresh]);
 
   useEffect(() => {
     const searchEvent = () => {
@@ -165,6 +166,7 @@ export default function EventBooking() {
         <EventModal 
           event={selectedEvent}
           action={action}
+          reFresh = {setRefresh}
           closeModal={closeModal} 
           onDelete={handleDelete}
         />
